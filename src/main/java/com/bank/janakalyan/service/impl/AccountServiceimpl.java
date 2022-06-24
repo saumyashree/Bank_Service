@@ -12,12 +12,13 @@ import com.bank.janakalyan.repository.TransactionRepository;
 import com.bank.janakalyan.service.AccountService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class AccountServiceimpl implements AccountService {
     @Autowired
     CustomerRepository customerRepository;
